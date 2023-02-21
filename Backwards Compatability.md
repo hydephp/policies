@@ -13,6 +13,18 @@ The major versions of the two core packages, [`hyde/hyde`](github.com/hydephp/hy
 ## Named Arguments
 [Named arguments](https://www.php.net/manual/en/functions.arguments.php#functions.named-arguments) are not covered by Hyde's backwards compatibility guidelines. We may choose to rename function arguments when necessary in order to improve the Hyde codebase. Therefore, using named arguments when calling Hyde methods should be done cautiously and with the understanding that the parameter names may change in the future.
 
+## Packages Covered
+
+### Abstract
+
+The HydePHP ecosystem consists of a couple parts, or packages, some of which have differing backwards compatability promises.
+
+### Exceptions
+
+Tests are not covered by the BC promise. Nor are classes or code marked as `@internal` or `@experimental`.
+Any package in the 0.x version range has, per the SemVer spec, no backwards compatability promise and may be unstable.
+Prereleases such as alpha, beta, and dev releases may also be unstable and should not be relied upon.
+
 ## Extra Information
 
 This document was based on the Laravel release documentation. https://laravel.com/docs/master/releases
