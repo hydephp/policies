@@ -53,4 +53,5 @@ If a security vulnerability which can only be resolved using a breaking change i
 
 ## Extra Information
 
-This document was based on the Laravel release documentation. https://laravel.com/docs/master/releases
+This document was based on the Laravel release documentation. https://laravel.com/docs/master/releases,
+and inspired by the Symfony BC promise. https://symfony.com/doc/current/contributing/code/bc.html
