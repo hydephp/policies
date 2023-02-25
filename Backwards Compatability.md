@@ -41,6 +41,12 @@ Tests and code within testing namespaces are not covered by the BC promise. Nor 
 Any package in the 0.x version range has, per the SemVer spec, no backwards compatability promise and may be unstable.
 Prereleases such as alpha, beta, and dev releases may also be unstable and should not be relied upon.
 
+### Code only partially covered by BC
+
+In general, protected class members (methods and properties) have limited BC support. This means that they may be refactored and changed when the need arises. However, care should be taken when changing protected class members of classes that are designed to be extended (for example base/abstract classes).
+ 
+Command classes are only partly covered by the BC promise as most of their class members are protected. In general, the console commands are not designed to be extended, and should be done so at your own risk.
+
 ## Extra Information
 
 This document was based on the Laravel release documentation. https://laravel.com/docs/master/releases
