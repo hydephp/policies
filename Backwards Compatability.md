@@ -23,6 +23,16 @@ The major versions of the two core packages, [`hyde/hyde`](github.com/hydephp/hy
 
 The HydePHP ecosystem consists of a couple parts, or packages, some of which have differing backwards compatability promises.
 
+### Overview
+Here is an overview of these packages and their adherance to this policy
+
+| Package                | BC Coverage? | Details                                 |
+|-:----------------------|-:------------|-:---------------------------------------|
+| Hyde/Hyde              | Yes :check:  |                                         |
+| Hyde/Framework         | Yes :check:  | Some namespaces are excluded, see below |
+| Hyde/Realtime-Compiler | Partial      |                                         |
+| Hyde/Testing           | None         |                                         |
+
 ### Exceptions
 
 Tests are not covered by the BC promise. Nor are classes or code marked as `@internal` or `@experimental`.
