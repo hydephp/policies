@@ -41,7 +41,7 @@ Tests and code within testing namespaces are not covered by the BC promise. Nor 
 Any package in the 0.x version range has, per the SemVer spec, no backwards compatability promise and may be unstable.
 Prereleases such as alpha, beta, and dev releases may also be unstable and should not be relied upon.
 
-### Code only partially covered by BC (`RFC`)
+### Code only partially covered by BC `(RFC)`
 
 In general, protected class members (methods and properties) have limited BC support. This means that they may be refactored and changed when the need arises. However, care should be taken when changing protected class members of classes that are designed to be extended (for example base/abstract classes).
  
