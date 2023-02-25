@@ -29,7 +29,7 @@ The HydePHP ecosystem consists of a couple parts, or packages, some of which hav
 Here is an overview of these packages and their adherance to this policy
 
 | Package                | BC Coverage? | Details                                 |
-|-:----------------------|-:------------|-:---------------------------------------|
+|:-----------------------|:-------------|:----------------------------------------|
 | Hyde/Hyde              | Yes :check:  |                                         |
 | Hyde/Framework         | Yes :check:  | Some namespaces are excluded, see below |
 | Hyde/Realtime-Compiler | Partial      |                                         |
