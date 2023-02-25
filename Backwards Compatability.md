@@ -33,7 +33,7 @@ Here is an overview of these packages and their adherance to this policy
 | Hyde/Realtime-Compiler | Partial      |                                         |
 | Hyde/Testing           | None         |                                         |
 
-### Exceptions
+## Exceptions
 
 Tests are not covered by the BC promise. Nor are classes or code marked as `@internal` or `@experimental`.
 Any package in the 0.x version range has, per the SemVer spec, no backwards compatability promise and may be unstable.
