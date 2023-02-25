@@ -47,6 +47,10 @@ In general, protected class members (methods and properties) have limited BC sup
  
 Command classes are only partly covered by the BC promise as most of their class members are protected. In general, the console commands are not designed to be extended, and should be done so at your own risk.
 
+### Security fixes
+
+If a security vulnerability which can only be resolved using a breaking change is discovered, we may consider a BC break to be acceptable. In that case this change will be clearly communicated, and may be accompaniade with a security advisory.
+
 ## Extra Information
 
 This document was based on the Laravel release documentation. https://laravel.com/docs/master/releases
