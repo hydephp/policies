@@ -1,5 +1,9 @@
 # Backwards Compatability
 
+## Abstract
+
+Ensuring that HydePHP projects can be upgraded smoothly is a top priority for us. For that reason, we have a backwards compatability promse, that guarantees that only major versions contain breaking changes. This document details how we operate and adhere to this, as well as what code is covered and what is not.
+
 ## Versioning Scheme
 
 HydePHP and its other first-party packages follow [Semantic Versioning](https://semver.org). Major framework releases may contain breaking changes. Minor and patch releases should never contain breaking changes.
