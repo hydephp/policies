@@ -37,7 +37,7 @@ Here is an overview of these packages and their adherance to this policy
 
 ### Code excluded from the BC promise
 
-Tests are not covered by the BC promise. Nor are classes or code marked as `@internal` or `@experimental`.
+Tests and code within testing spaces are not covered by the BC promise. Nor are classes or code marked as `@internal` or `@experimental`.
 Any package in the 0.x version range has, per the SemVer spec, no backwards compatability promise and may be unstable.
 Prereleases such as alpha, beta, and dev releases may also be unstable and should not be relied upon.
 
