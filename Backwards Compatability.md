@@ -41,6 +41,18 @@ Here is an overview of these packages and their adherance to this policy
 
 In general, public class members and interfaces, as well as base/abstract classes intended to be extended are covered by the BC promise. However, there are some exceptions.
 
+Here is a quick overview: (See further information below)
+
+| Code Type                   | Covered by BC? | Details                                                           |  |
+|:----------------------------|:---------------|:------------------------------------------------------------------|--|
+| Private class members       |                | No                                                                |  |
+| Protected class members     | Partially      | Only in classes designed to be extended)                          |  |
+| Public class members        | Yes            |                                                                   |  |
+| Code marked as experimental | Never          |                                                                   |  |
+| Code marked as internal     | Never          |                                                                   |  |
+| Unreleased code*            | No             | *For example code on develop branches that have not been released |  |
+
+
 ### Code excluded from the BC promise
 
 Tests and code within testing namespaces are not covered by the BC promise. Nor are classes or code marked as `@internal` or `@experimental`.
