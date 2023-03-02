@@ -39,18 +39,18 @@ Here is an overview of these packages and their adherance to this policy
 
 ## Exceptions
 
-In general, public class members and interfaces, as well as base/abstract classes intended to be extended are covered by the BC promise. However, there are some exceptions.
+In general, public class members and interfaces, as well as base/abstract classes intended to be extended are covered by the BC promise. However, there are some exceptions. These apply to all packages in the ecosystem.
 
 Here is a quick overview: (See further information below)
 
-| Code Type                   | Covered by BC? | Details                                                           |  |
-|:----------------------------|:---------------|:------------------------------------------------------------------|--|
-| Private class members       |                | No                                                                |  |
-| Protected class members     | Partially      | Only in classes designed to be extended)                          |  |
-| Public class members        | Yes            |                                                                   |  |
-| Code marked as experimental | Never          |                                                                   |  |
-| Code marked as internal     | Never          |                                                                   |  |
-| Unreleased code*            | No             | *For example code on develop branches that have not been released |  |
+| Code Type                   | Covered by BC? | Details                                                           | 
+|-:---------------------------|-:--------------|-:-----------------------------------------------------------------|
+| Private class members       |                | No                                                                |
+| Protected class members     | Partially      | Only in classes designed to be extended)                          | 
+| Public class members        | Yes            |                                                                   | 
+| Unreleased code             | No             |                                                                   | 
+| Code marked as experimental | Never          |                                                                   | 
+| Code marked as internal     | Never          |                                                                   | 
 
 
 ### Code excluded from the BC promise
@@ -64,6 +64,11 @@ Prereleases such as alpha, beta, and dev releases may also be unstable and shoul
 In general, protected class members (methods and properties) have limited BC support. This means that they may be refactored and changed when the need arises. However, care should be taken when changing protected class members of classes that are designed to be extended (for example base/abstract classes like BuildTasks and the Extensions API)
  
 Command classes are only partly covered by the BC promise as most of their class members are protected. In general, the console commands are not designed to be extended, and should be done so at your own risk.
+
+### Unreleased code
+
+As the backwards compatabilty promise only kicks in upon the release of the given code, any code t that is unreleased, for example on the development branches, is not yet covered by the BC promise. You should always use the latest stable version when building something that depends on the framework code. 
+
 
 ### Security fixes
 
