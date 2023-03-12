@@ -1,2 +1,1 @@
-# policies
-HydePHP - Organization Policies
+# HydePHP - Organization Policies
