@@ -30,7 +30,7 @@ jobs:
      
       # Replace files
       - name: Replace files
-        run: rm hyde/_pages rf && mkdir hyde/_pages && cp *.md hyde/_pages/.
+        run: rm hyde/_pages -rf && mkdir hyde/_pages && cp *.md hyde/_pages/.
        
       # Now we can build the site! We do this using the HydeCLI
       - name: Build the site
