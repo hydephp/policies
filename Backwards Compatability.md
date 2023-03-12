@@ -14,7 +14,7 @@ When referencing the HydePHP framework or its components from your application o
 
 The major versions of the two core packages, [`hyde/hyde`](github.com/hydephp/hyde`) and [`hyde/framework`](github.com/hydephp/framework) are tied together; meaning that both versions get their major version number bumped at the same time. So if your framework version is v1.x, so should your Hyde version be. Minor and patch versions are handled independently within the packages.
 
-Other first party packages are independently versioned.
+Other first-party packages are independently versioned.
 
 ## Named Arguments
 
