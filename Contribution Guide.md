@@ -1,0 +1,1 @@
+# General HydePHP Contribution Guide
