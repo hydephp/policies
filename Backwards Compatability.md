@@ -44,7 +44,7 @@ In general, public class members and interfaces, as well as base/abstract classe
 Here is a quick overview: (See further information below)
 
 | Code Type                   | Covered by BC? | Details                                                           | 
-|-:---------------------------|-:--------------|-:-----------------------------------------------------------------|
+|:---------------------------|:--------------|:-----------------------------------------------------------------|
 | Private class members       |                | No                                                                |
 | Protected class members     | Partially      | Only in classes designed to be extended)                          | 
 | Public class members        | Yes            |                                                                   | 
