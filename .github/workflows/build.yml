@@ -24,34 +24,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
       - uses: actions/checkout@v3
 
-      # (optional) Validate the Composer files to catch any errors early on
-      - name: Validate composer.json and composer.lock
-        run: composer validate --strict
-
-      # (optional) Cache the Composer packages to speed up future builds
-      - name: Cache Composer packages
-        id: composer-cache
-        uses: actions/cache@v3
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-
-      # Install the Composer packages
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
-
+      # Setup Hyde
+      - name: Setup Hyde
+        run: composer create-project hyde/hyde rc=dev
+        
       # Now we can build the site! We do this using the HydeCLI
       - name: Build the site
-        run: php hyde build --no-interaction
+        run: cd hyde && php hyde build --no-interaction
       
       # Our site is now compiled into the _site directory, so we'll upload it to an artifact to use in the next job
       - name: Upload site artifact
         uses: actions/upload-artifact@v3
         with:
           name: site
-          path: _site
+          path: hyde/_site
 
 
   # Now we can deploy the site to GitHub Pages!
