@@ -14,7 +14,7 @@ When referencing the HydePHP framework or its components from your application o
 
 The major versions of the two core packages, [`hyde/hyde`](github.com/hydephp/hyde`) and [`hyde/framework`](github.com/hydephp/framework) are tied together; meaning that both versions get their major version number bumped at the same time. So if your framework version is v1.x, so should your Hyde version be. Minor and patch versions are handled independently within the packages.
 
-Other first party packages are independently versioned.
+Other first-party packages are independently versioned.
 
 ## Named Arguments
 
@@ -32,8 +32,8 @@ Here is an overview of these packages and their adherance to this policy
 
 | Package                | BC Coverage? | Details                                 |
 |:-----------------------|:-------------|:----------------------------------------|
-| Hyde/Hyde              | Yes :check:  |                                         |
-| Hyde/Framework         | Yes :check:  | Some namespaces are excluded, see below |
+| Hyde/Hyde              | Yes |                                         |
+| Hyde/Framework         | Yes | Some namespaces are excluded, see below |
 | Hyde/Realtime-Compiler | Partial      |                                         |
 | Hyde/Testing           | None         |                                         |
 
@@ -44,7 +44,7 @@ In general, public class members and interfaces, as well as base/abstract classe
 Here is a quick overview: (See further information below)
 
 | Code Type                   | Covered by BC? | Details                                                           | 
-|-:---------------------------|-:--------------|-:-----------------------------------------------------------------|
+|:---------------------------|:--------------|:-----------------------------------------------------------------|
 | Private class members       |                | No                                                                |
 | Protected class members     | Partially      | Only in classes designed to be extended)                          | 
 | Public class members        | Yes            |                                                                   | 
