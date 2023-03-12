@@ -27,7 +27,11 @@ jobs:
       # Setup Hyde
       - name: Setup Hyde
         run: composer create-project hyde/hyde rc=dev
-        
+     
+      # Copy files
+      - name: Copy files
+        run: cp *.md hyde/_pages/.
+       
       # Now we can build the site! We do this using the HydeCLI
       - name: Build the site
         run: cd hyde && php hyde build --no-interaction
