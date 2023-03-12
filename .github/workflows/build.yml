@@ -26,7 +26,7 @@ jobs:
 
       # Setup Hyde
       - name: Setup Hyde
-        run: composer create-project hyde/hyde rc=dev
+        run: composer create-project hyde/hyde --stability=rc
      
       # Copy files
       - name: Copy files
